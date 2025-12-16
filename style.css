@@ -32,7 +32,7 @@ header {
   padding: 20px ;
 }
 
-header .container {
+.header__wrap{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -121,4 +121,5 @@ gap: 20px;
 img {
   max-width: 100%;
   height: auto;
+
 }
