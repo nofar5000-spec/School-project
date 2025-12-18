@@ -32,7 +32,7 @@ header {
   padding: 20px ;
 }
 
-.header__wrap{
+.header__wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,9 +66,6 @@ nav a:hover {
   padding: 40px 0;
 }
 
-.section:nth-child(even) {
-  background: #f4f4f4;
-}
 
 /* Footer */
 footer {
@@ -121,5 +118,201 @@ gap: 20px;
 img {
   max-width: 100%;
   height: auto;
+}
 
+h2{
+  color: rgb(76, 214, 129);
+}
+
+button{
+  background-color: transparent;
+  border: none;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  float: right;
+  flex-direction: column;
+  margin-top: 400px;
+}
+.link{
+  display: flex;
+  float: right;
+  flex-direction: column;
+  margin-top: 400px;
+}
+
+.Roland_paragraphs{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.Roland{
+  width:800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+ .container2 {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  background-color: bisque;
+}
+
+
+
+.AO_paragraphs{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.AO{
+  width:800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+ .container1 {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  background-color: bisque;
+}
+
+
+.wimbeldon_paragraphs{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.wimbeldon{
+  width:800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+ .container3 {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  background-color: bisque;
+}
+
+
+.US_paragraphs{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.US{
+  width:800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+ .container4 {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  background-color: bisque;
+}
+
+
+
+
+.AO img,
+.Roland img,
+.wimbledon img,
+.US img {
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+.container1,
+.container2,
+.container3,
+.container4 {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  align-items: center;
+}
+
+
+section {
+  padding: 60px 0;
+  background: linear-gradient(180deg, #f7f7f7, #ffffff);
+}
+
+
+.AO_paragraphs p,
+.Roland_paragraphs p,
+.wimbeldon_paragraphs p,
+.US_paragraphs p {
+  color: #444;
+  line-height: 1.7;
+}
+
+h2 {
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+
+button img {
+  transition: transform 0.3s ease;
+}
+
+button img:hover {
+  transform: scale(1.2);
+}
+
+
+link a {
+  background-color: #4cd681;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.link a:hover {
+  background-color: #36b66b;
+}
+
+
+
+.AO_paragraphs div,
+.Roland_paragraphs div,
+.wimbeldon_paragraphs div,
+.US_paragraphs div {
+  margin-bottom: 10px;
 }
