@@ -139,6 +139,7 @@ button{
   flex-direction: column;
   margin-top: 400px;
 }
+
 .link{
   display: flex;
   float: right;
@@ -342,11 +343,11 @@ display: flex;
     justify-content: space-between;
     gap: 15px;
 }
+
 .services__item:hover{
 transform: scale(1.07);
 transition: all 0.8s;
 box-shadow: 0px 4px 12px 7px rgb(146, 236, 151);
-
 }
 
 .services__title{
@@ -355,4 +356,62 @@ box-shadow: 0px 4px 12px 7px rgb(146, 236, 151);
     align-items: center;
     font-weight: bold;
     text-align: center;
+}
+
+.text-box {
+    border: 2px solid #333;
+    padding: 20px;  
+    background-color: #f8f8f8;
+    margin: 10px;            
+    width: 100%;
+    border-radius: 20px;
+}
+
+.message_subject {
+    border: 2px solid #333;
+    padding: 20px;  
+    background-color: #f8f8f8;
+    margin: 10px;             
+    width: 98%;
+    border-radius: 20px;
+}
+
+.message_content{
+    border: 2px solid #333;
+    padding: 20px;  
+    background-color: #f8f8f8;
+    margin: 10px;             
+    width: 98%;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.button-send {
+    border: 2px solid #333;
+    padding: 15px;  
+    background-color: #8ed2a2;
+    margin: 10px;            
+    width: fit-content;
+    height: inherit;
+    border-radius: 10px;
+    float: left; 
+    text-align: center;
+}
+
+.button-send:hover{
+transform: scale(1.07);
+transition: all 0.8s;
+box-shadow: 0px 4px 12px 7px rgb(146, 236, 151);
+}
+
+.text_box_layout{
+    display: flex;
+    align-items: center;
+}
+
+.info-box {
+    width: 400px; 
+    padding: 20px; 
+    margin: 10px; 
+    border-radius: 8px; 
 }
