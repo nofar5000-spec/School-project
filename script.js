@@ -1,8 +1,4 @@
 const btn = document.getElementById("button");
-btn.addEventListener("click", 
-    function() {
-    alert('Press button');
-})
 
 const form = document.querySelector('#button');
 form.addEventListener("click", function(e){
@@ -24,7 +20,6 @@ form.addEventListener("click", function(e){
         return;
     }
     const emailPattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    // const emailPattern=/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     console.log(emailPattern.test(email));
     if(!emailPattern.test(email)){
         alert("invalid email address");
@@ -46,8 +41,28 @@ form.addEventListener("click", function(e){
         alert("the massege contant must be at least 10 notes");
         return;
     }
-
-
-
-
 })
+
+btn.addEventListener("click", () => {
+    const userName = document.querySelector('#full_name').value;
+    const email = document.querySelector('#email').value;
+    const phone = document.querySelector('#phone_num').value;
+    const msg_subj = document.querySelector('#msg_subj').value;
+    const msg_cont = document.querySelector('#msg_cont').value;
+
+    fetch("http://localhost:3000/post", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ 
+            Name: userName, 
+            Email: email, 
+            Phone: phone, 
+            Subject: msg_subj, 
+            Content: msg_cont})
+        })
+        .then(res => res.text())
+        .then(data => alert(data))
+        .catch(err => console.error(err));
+    });
